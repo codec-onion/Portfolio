@@ -6,7 +6,6 @@ header {
   top: 0;
   background-color: $quaternary-color;
   color: $tertiary-color;
-  padding: 0 100px;
   border-bottom: 2px solid $primary-color;
   position: sticky;
   img {
@@ -21,10 +20,14 @@ header {
     color: $tertiary-color;
     text-decoration: none;
     text-transform: uppercase;
+    text-underline-position: under;
     &:last-child {
       margin-left: 70px;
     }
     &:hover {
+      text-decoration: underline;
+    }
+    &.active {
       text-decoration: underline;
     }
   }

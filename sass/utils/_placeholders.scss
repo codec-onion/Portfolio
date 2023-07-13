@@ -1,0 +1,10 @@
+%left-right-padding {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+header,
+main,
+footer {
+  @extend %left-right-padding;
+}

@@ -1,10 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap");
-body,
+header,
+main,
+footer {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+*,
 ::before,
 ::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: "Quicksand", sans-serif;
   font-size: 20px;
 }
@@ -13,6 +23,7 @@ h1,
 h2,
 h3 {
   font-family: "Pacifico", sans-serif;
+  font-weight: lighter;
 }
 
 h1 {
@@ -35,7 +46,6 @@ header {
   top: 0;
   background-color: #14213d;
   color: #fca311;
-  padding: 0 100px;
   border-bottom: 2px solid #ffffff;
   position: sticky;
 }
@@ -51,11 +61,15 @@ header a {
   color: #fca311;
   text-decoration: none;
   text-transform: uppercase;
+  text-underline-position: under;
 }
 header a:last-child {
   margin-left: 70px;
 }
 header a:hover {
+  text-decoration: underline;
+}
+header a.active {
   text-decoration: underline;
 }
 
