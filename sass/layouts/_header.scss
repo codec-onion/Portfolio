@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  top: 0;
+  background-color: $quaternary-color;
+  color: $tertiary-color;
+  padding: 0 100px;
+  border-bottom: 2px solid $primary-color;
+  position: sticky;
+  img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    box-shadow: 0 0 6px $tertiary-color;
+    vertical-align: middle;
+    margin-right: 20px;
+  }
+  a {
+    color: $tertiary-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:last-child {
+      margin-left: 70px;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
