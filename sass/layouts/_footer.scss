@@ -1,0 +1,19 @@
+footer {
+  background-color: $quaternary-color;
+  color: $tertiary-color;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .social-network {
+    margin: 20px 0;
+    a {
+      img {
+        width: 60px;
+        height: 60px;
+      }
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+}

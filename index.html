@@ -17,6 +17,7 @@
         <a href="#">Contact</a>
       </nav>
     </header>
+
     <main class="home">
       <div class="bienvenue">
         <h1>Bienvenue sur mon portfolio</h1>
@@ -41,6 +42,7 @@
           </p>
         </div>
       </div>
+
       <div class="techno">
         <h2>Les technos que j'utilise</h2>
         <img src="./images/react.png" alt="react" class="techno_img" />
@@ -50,24 +52,75 @@
         <img src="./images/html5.png" alt="html5" class="techno_img" />
         <img src="./images/css3.png" alt="css3" class="techno_img" />
       </div>
+
       <div class="projects">
         <h2>Mes projets</h2>
-        <div class="projects_react">
-          <div class="projects_react_img">
-            <img src="" alt="" />
+        <div class="projects_card">
+          <div class="projects_card_img">
+            <img
+              src="./images/kasa.png"
+              alt="l'application de location immobilière fait avec React"
+            />
           </div>
-          <div class="projects_react_description">
+          <div class="projects_card_description">
             <h3>
               Application React de location immobilière (projet de formation)
             </h3>
-            <p class="projects_react_description_text">
-              Ce projet est entièrement fait avec le framework React. Il permet
-              d’afficher une liste de carte de logement, récupérés avec un
-              fetch, et la possibilité de cliquer dessus pour aller sur la fiche
-              du logement. Ce projet tire partie des avantages de React, à
+            <p class="projects_card_description_text">
+              Ce projet est entièrement fait avec le framework React. Cette
+              application affiche une liste de carte de logement, récupérés avec
+              un fetch, et la possibilité de cliquer dessus pour aller sur la
+              fiche du logement. Ce projet tire partie des avantages de React, à
               savoir les composants réutilisables.
             </p>
-            <div class="projects_react_description_buttons">
+            <div class="projects_card_description_buttons">
+              <a href="">Voir le code source</a>
+              <a href="">Aller sur le site web</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects_separator"></div>
+
+        <div class="projects_card">
+          <div class="projects_card_img">
+            <img src="./images/api-express.png" alt="github de l'api rest" />
+          </div>
+          <div class="projects_card_description">
+            <h3>
+              API Rest pour une application web de critiques de sauces piquantes
+            </h3>
+            <p class="projects_card_description_text">
+              Ce projet est fait avec le framework Express qui permet de créer
+              un API Rest. Cette API gère l’authentification utilisateur. Elle
+              permet de poster, modifier, supprimer, liker ou disliker une
+              sauce.
+            </p>
+            <div class="projects_card_description_buttons">
+              <a href="">Voir le code source</a>
+              <a href="">Aller sur le site web</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects_separator"></div>
+
+        <div class="projects_card">
+          <div class="projects_card_img">
+            <img
+              src="./images/ohmyfood.png"
+              alt="site de restaurant gastronomique"
+            />
+          </div>
+          <div class="projects_card_description">
+            <h3>Site de restaurants grastronomiques</h3>
+            <p class="projects_card_description_text">
+              Ce projet est fait en HTML et CSS seulement. Le but ici était de
+              faire des animations, c’est pourquoi le chargement de la page
+              d’accueil n’étant pas géré par du JS, l’animation du chargement se
+              répète à chaque fois.
+            </p>
+            <div class="projects_card_description_buttons">
               <a href="">Voir le code source</a>
               <a href="">Aller sur le site web</a>
             </div>
@@ -75,6 +128,20 @@
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <p>Mes réseaux sociaux</p>
+      <div class="social-network">
+        <a href="https://www.linkedin.com/in/matthieu-bonnet-a44512254"
+          ><img src="./images/linkedin.png" alt="linkedin"
+        /></a>
+        <a href="https://twitter.com/BonnetMatthieu3"
+          ><img src="./images/twitter.png" alt="twitter"
+        /></a>
+        <a href="https://github.com/codec-onion"
+          ><img src="./images/github.png" alt="github"
+        /></a>
+      </div>
+      <p class="copyright">© 2023 Matthieu Bonnet</p>
+    </footer>
   </body>
 </html>

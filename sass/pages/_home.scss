@@ -1,6 +1,5 @@
 .home {
   margin-top: 50px;
-  margin-bottom: 50px;
   .bienvenue {
     h1 {
       text-align: center;
@@ -21,10 +20,10 @@
       &_text {
         margin: 20px;
         &_link {
-          color: $quaternary-color;
-          text-decoration: underline;
+          color: $link-color;
+          text-decoration: none;
           &:hover {
-            text-decoration: none;
+            text-decoration: underline;
           }
         }
       }
@@ -41,6 +40,73 @@
     &_img {
       &:not(:last-child) {
         margin-right: 40px;
+      }
+    }
+  }
+  .projects {
+    background-color: $tertiary-color;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    h2 {
+      margin-bottom: 50px;
+    }
+    h3 {
+      font-weight: 400;
+    }
+    > div:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    &_separator {
+      width: 50%;
+      height: 3px;
+      background-color: $fifth-color;
+      margin: auto;
+    }
+    &_card {
+      height: 400px;
+      display: flex;
+      justify-content: space-between;
+      &:nth-child(4) {
+        flex-direction: row-reverse;
+      }
+      &_img {
+        width: 50%;
+        img {
+          border-radius: 20px;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: top left;
+        }
+      }
+      &_description {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &_text {
+          text-align: justify;
+        }
+        &_buttons {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          a {
+            display: inline-block;
+            background-color: $quaternary-color;
+            color: $tertiary-color;
+            text-decoration: none;
+            width: 48%;
+            min-width: 207px;
+            text-align: center;
+            padding: 10px 15px;
+            border-radius: 10px;
+            transition: 200ms;
+            &:hover {
+              background-color: $link-color;
+            }
+          }
+        }
       }
     }
   }

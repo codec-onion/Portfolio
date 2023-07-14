@@ -2,15 +2,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 120px;
+  height: 80px;
   top: 0;
   background-color: $quaternary-color;
   color: $tertiary-color;
   border-bottom: 2px solid $primary-color;
   position: sticky;
   img {
-    height: 80px;
-    width: 80px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     box-shadow: 0 0 6px $tertiary-color;
     vertical-align: middle;
