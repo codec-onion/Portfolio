@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap");
 header,
-main,
+main > div:not(.presentation),
 footer {
   padding-left: 100px;
   padding-right: 100px;
@@ -71,6 +71,49 @@ header a:hover {
 }
 header a.active {
   text-decoration: underline;
+}
+
+.home {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.home .bienvenue h1 {
+  text-align: center;
+}
+.home .bienvenue_presentation {
+  height: 250px;
+  background-color: #e5e5e5;
+  border-radius: 125px 20px 20px 125px;
+  display: flex;
+  align-items: center;
+  margin: 40px auto 70px;
+}
+.home .bienvenue_presentation_img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+.home .bienvenue_presentation_text {
+  margin: 20px;
+}
+.home .bienvenue_presentation_text_link {
+  color: #14213d;
+  text-decoration: underline;
+}
+.home .bienvenue_presentation_text_link:hover {
+  text-decoration: none;
+}
+.home .techno {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  color: #fca311;
+  background-color: #14213d;
+}
+.home .techno h2 {
+  margin-bottom: 30px;
+}
+.home .techno_img:not(:last-child) {
+  margin-right: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

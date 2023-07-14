@@ -1,0 +1,47 @@
+.home {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  .bienvenue {
+    h1 {
+      text-align: center;
+    }
+    &_presentation {
+      height: 250px;
+      background-color: $secondary-color;
+      border-radius: 125px 20px 20px 125px;
+      display: flex;
+      align-items: center;
+      //   width: 90%;
+      margin: 40px auto 70px;
+      &_img {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+      }
+      &_text {
+        margin: 20px;
+        &_link {
+          color: $quaternary-color;
+          text-decoration: underline;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .techno {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: $tertiary-color;
+    background-color: $quaternary-color;
+    h2 {
+      margin-bottom: 30px;
+    }
+    &_img {
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+  }
+}

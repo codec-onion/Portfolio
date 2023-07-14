@@ -17,8 +17,63 @@
         <a href="#">Contact</a>
       </nav>
     </header>
-    <main>
-      <h1>Bienvenue sur mon portfolio</h1>
+    <main class="home">
+      <div class="bienvenue">
+        <h1>Bienvenue sur mon portfolio</h1>
+        <div class="bienvenue_presentation">
+          <img
+            src="./images/photo_profil.jpg"
+            alt="ma tête en plan serré"
+            class="bienvenue_presentation_img"
+          />
+          <p class="bienvenue_presentation_text">
+            Bonjour je m’appelle <strong>Matthieu Bonnet</strong> et je vous
+            souhaite la bienvenue sur mon portfolio. <br />
+            J’ai fait une reconversion web en passant par la formation “<strong
+              >Développeur web</strong
+            >” d’Openclassrooms. J’aime ce domaine, en particulier le fait
+            d’<strong>être constamment dans l’apprentissage</strong> car je suis
+            <strong> curieux de nature </strong>. <br />
+            Vous pouvez
+            <a href="" class="bienvenue_presentation_text_link"
+              >me contacter en cliquant ici</a
+            >.
+          </p>
+        </div>
+      </div>
+      <div class="techno">
+        <h2>Les technos que j'utilise</h2>
+        <img src="./images/react.png" alt="react" class="techno_img" />
+        <img src="./images/nodejs.png" alt="nodejs" class="techno_img" />
+        <img src="./images/express.png" alt="express" class="techno_img" />
+        <img src="./images/github.png" alt="github" class="techno_img" />
+        <img src="./images/html5.png" alt="html5" class="techno_img" />
+        <img src="./images/css3.png" alt="css3" class="techno_img" />
+      </div>
+      <div class="projects">
+        <h2>Mes projets</h2>
+        <div class="projects_react">
+          <div class="projects_react_img">
+            <img src="" alt="" />
+          </div>
+          <div class="projects_react_description">
+            <h3>
+              Application React de location immobilière (projet de formation)
+            </h3>
+            <p class="projects_react_description_text">
+              Ce projet est entièrement fait avec le framework React. Il permet
+              d’afficher une liste de carte de logement, récupérés avec un
+              fetch, et la possibilité de cliquer dessus pour aller sur la fiche
+              du logement. Ce projet tire partie des avantages de React, à
+              savoir les composants réutilisables.
+            </p>
+            <div class="projects_react_description_buttons">
+              <a href="">Voir le code source</a>
+              <a href="">Aller sur le site web</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer></footer>
   </body>
