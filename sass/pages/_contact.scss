@@ -1,0 +1,14 @@
+.contact {
+  &__section {
+    text-align: center;
+    background-color: $secondary-color;
+    padding-top: 50px;
+    padding-bottom: 45px;
+  }
+  &__social-network {
+    img {
+      height: 60px;
+      width: 60px;
+    }
+  }
+}

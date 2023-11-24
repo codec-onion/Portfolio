@@ -38,6 +38,7 @@ h3 {
 }
 
 header {
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,8 +46,7 @@ header {
   top: 0;
   background-color: #14213d;
   color: #fca311;
-  border-bottom: 2px solid #ffffff;
-  position: sticky;
+  border-bottom: 2px solid #fca311;
 }
 header img {
   height: 50px;
@@ -197,6 +197,17 @@ footer .social-network a:not(:last-child) {
 }
 .home .projects_card_description_buttons a:hover {
   background-color: #0f3ca4;
+}
+
+.contact__section {
+  text-align: center;
+  background-color: #e5e5e5;
+  padding-top: 50px;
+  padding-bottom: 45px;
+}
+.contact__social-network img {
+  height: 60px;
+  width: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */
