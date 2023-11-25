@@ -5,17 +5,23 @@
       text-align: center;
     }
     &_presentation {
-      height: 250px;
+      padding: 0.1px;
+      z-index: 0;
       background-color: $secondary-color;
-      border-radius: 125px 20px 20px 125px;
-      display: flex;
-      align-items: center;
-      //   width: 90%;
+      border-radius: 125px 20px 20px 20px;
       margin: 40px auto 70px;
+      line-height: 1.4;
+      h2 {
+        text-align: center;
+        margin-top: 20px;
+      }
       &_img {
+        float: left;
+        margin: 0 20px 20px 0;
         height: 250px;
         width: 250px;
         border-radius: 50%;
+        shape-outside: margin-box;
       }
       &_text {
         margin: 20px;
@@ -26,6 +32,10 @@
             text-decoration: underline;
           }
         }
+      }
+      p:last-child {
+        text-align: center;
+        margin-bottom: 20px;
       }
     }
   }

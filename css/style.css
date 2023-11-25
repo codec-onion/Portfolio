@@ -37,8 +37,13 @@ h3 {
   font-size: 30px;
 }
 
+.text-center {
+  text-align: center;
+}
+
 header {
   position: sticky;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,17 +102,24 @@ footer .social-network a:not(:last-child) {
   text-align: center;
 }
 .home .bienvenue_presentation {
-  height: 250px;
+  padding: 0.1px;
+  z-index: 0;
   background-color: #e5e5e5;
-  border-radius: 125px 20px 20px 125px;
-  display: flex;
-  align-items: center;
+  border-radius: 125px 20px 20px 20px;
   margin: 40px auto 70px;
+  line-height: 1.4;
+}
+.home .bienvenue_presentation h2 {
+  text-align: center;
+  margin-top: 20px;
 }
 .home .bienvenue_presentation_img {
+  float: left;
+  margin: 0 20px 20px 0;
   height: 250px;
   width: 250px;
   border-radius: 50%;
+  shape-outside: margin-box;
 }
 .home .bienvenue_presentation_text {
   margin: 20px;
@@ -118,6 +130,10 @@ footer .social-network a:not(:last-child) {
 }
 .home .bienvenue_presentation_text_link:hover {
   text-decoration: underline;
+}
+.home .bienvenue_presentation p:last-child {
+  text-align: center;
+  margin-bottom: 20px;
 }
 .home .techno {
   padding-top: 20px;
