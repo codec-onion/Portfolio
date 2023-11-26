@@ -1,13 +1,25 @@
 .contact {
+  text-align: center;
+  div {
+    margin-bottom: 50px;
+  }
+  h2 {
+    margin-bottom: 25px;
+  }
   &__section {
-    text-align: center;
     background-color: $secondary-color;
     padding: 50px 0 45px 0;
   }
   &__social-network {
+    p {
+      margin-bottom: 20px;
+    }
+    a:not(:last-child) {
+      margin-right: 30px;
+    }
     img {
-      height: 60px;
-      width: 60px;
+      height: 120px;
+      width: 120px;
     }
   }
 }

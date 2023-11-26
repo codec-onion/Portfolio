@@ -25,13 +25,13 @@
       }
       &_text {
         margin: 20px;
-        &_link {
-          color: $link-color;
-          text-decoration: none;
-          &:hover {
-            text-decoration: underline;
-          }
-        }
+        // &_link {
+        //   color: $link-color;
+        //   text-decoration: none;
+        //   &:hover {
+        //     text-decoration: underline;
+        //   }
+        // }
       }
       p:last-child {
         text-align: center;
