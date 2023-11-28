@@ -103,6 +103,11 @@ header a:hover {
 header a.active {
   text-decoration: underline;
 }
+@media all and (max-width: 767px) {
+  header {
+    flex-direction: column;
+  }
+}
 
 footer {
   background-color: #14213d;

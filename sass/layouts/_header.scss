@@ -32,4 +32,7 @@ header {
       text-decoration: underline;
     }
   }
+  @include mobile-display {
+    flex-direction: column;
+  }
 }

@@ -1,0 +1,10 @@
+@mixin tablette-display {
+  @media all and (max-width: map-get($breakpoints, tablette)) {
+    @content;
+  }
+}
+@mixin mobile-display {
+  @media all and (max-width: map-get($breakpoints, mobile)) {
+    @content;
+  }
+}
