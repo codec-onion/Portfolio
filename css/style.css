@@ -14,9 +14,19 @@ footer {
   padding: 0;
 }
 
+@keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 body {
   font-family: "Quicksand", sans-serif;
   font-size: 20px;
+  opacity: 0;
+  animation: opening 1s ease forwards;
 }
 
 h1,
@@ -44,6 +54,18 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+
+.logo-social-network--contact {
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+}
+.logo-social-network--footer {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #ffffff;
 }
 
 header {
@@ -91,12 +113,6 @@ footer {
 }
 footer .social-network {
   margin: 20px 0;
-}
-footer .social-network a img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 1px solid #ffffff;
 }
 footer .social-network a:not(:last-child) {
   margin-right: 20px;
@@ -240,10 +256,6 @@ footer .social-network a:not(:last-child) {
 }
 .contact__social-network a:not(:last-child) {
   margin-right: 30px;
-}
-.contact__social-network img {
-  height: 120px;
-  width: 120px;
 }
 
 /*# sourceMappingURL=style.css.map */

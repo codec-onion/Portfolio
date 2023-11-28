@@ -1,0 +1,13 @@
+.logo-social-network {
+  &--contact {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+  }
+  &--footer {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: 1px solid $primary-color;
+  }
+}
