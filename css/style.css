@@ -164,6 +164,11 @@ footer .social-network a:not(:last-child) {
 .home {
   margin-top: 50px;
 }
+@media all and (max-width: 767px) {
+  .home {
+    margin-top: 10px;
+  }
+}
 .home .bienvenue h1 {
   text-align: center;
 }
@@ -195,13 +200,26 @@ footer .social-network a:not(:last-child) {
   margin-bottom: 20px;
 }
 @media all and (max-width: 767px) {
+  .home .bienvenue h1 {
+    margin-bottom: 10px;
+  }
+  .home .bienvenue h2 {
+    display: none;
+  }
   .home .bienvenue__presentation {
+    text-align: justify;
     background-color: #ffffff;
+    margin: 0 0 35px;
   }
   .home .bienvenue__presentation img {
+    float: none;
     height: 160px;
     width: 160px;
-    float: none;
+    display: block;
+    margin: auto;
+  }
+  .home .bienvenue__presentation__text {
+    margin: 20px 0 20px;
   }
 }
 .home .techno {
