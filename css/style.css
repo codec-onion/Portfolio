@@ -80,8 +80,8 @@ a:hover {
   header,
   main > div:not(.presentation),
   footer {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -289,6 +289,30 @@ footer .social-network a:not(:last-child) {
 }
 .home .projects_card_description_buttons a:hover {
   background-color: #0f3ca4;
+}
+@media all and (max-width: 767px) {
+  .home .projects h2 {
+    text-align: center;
+  }
+  .home .projects_card {
+    flex-direction: column;
+    height: auto;
+  }
+  .home .projects_card:nth-child(4) {
+    flex-direction: column;
+  }
+  .home .projects_card_img, .home .projects_card_description > *:not(:last-child), .home .projects_card_description_buttons a:first-child {
+    margin-bottom: 10px;
+  }
+  .home .projects_card_img {
+    width: auto;
+  }
+  .home .projects_card_description {
+    width: auto;
+  }
+  .home .projects_card_description_buttons a {
+    width: 100%;
+  }
 }
 
 .contact {

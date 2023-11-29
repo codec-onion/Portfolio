@@ -129,5 +129,33 @@
         }
       }
     }
+    @include mobile-display {
+      h2 {
+        text-align: center;
+      }
+      &_card {
+        flex-direction: column;
+        height: auto;
+        &:nth-child(4) {
+          flex-direction: column;
+        }
+        &_img,
+        &_description > *:not(:last-child),
+        &_description_buttons a:first-child {
+          margin-bottom: 10px;
+        }
+        &_img {
+          width: auto;
+        }
+        &_description {
+          width: auto;
+          &_buttons {
+            a {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
   }
 }
