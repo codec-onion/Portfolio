@@ -28,6 +28,11 @@ body {
   opacity: 0;
   animation: opening 1s ease forwards;
 }
+@media all and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+}
 
 h1,
 h2 {
@@ -39,13 +44,28 @@ h1 {
   font-size: 60px;
   margin-bottom: 40px;
 }
+@media all and (max-width: 767px) {
+  h1 {
+    font-size: 40px;
+  }
+}
 
 h2 {
   font-size: 40px;
 }
+@media all and (max-width: 767px) {
+  h2 {
+    font-size: 30px;
+  }
+}
 
 h3 {
   font-size: 30px;
+}
+@media all and (max-width: 767px) {
+  h3 {
+    font-size: 24px;
+  }
 }
 
 a {
@@ -54,6 +74,15 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+
+@media all and (max-width: 767px) {
+  header,
+  main > div:not(.presentation),
+  footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .logo-social-network--contact {
@@ -79,6 +108,10 @@ header {
   background-color: #14213d;
   color: #fca311;
   border-bottom: 2px solid #fca311;
+}
+header div:first-child {
+  display: flex;
+  align-items: center;
 }
 header img {
   height: 50px;
@@ -106,6 +139,11 @@ header a.active {
 @media all and (max-width: 767px) {
   header {
     flex-direction: column;
+    height: 117px;
+    padding: 15px;
+  }
+  header div:first-child {
+    margin-bottom: 15px;
   }
 }
 
@@ -129,7 +167,7 @@ footer .social-network a:not(:last-child) {
 .home .bienvenue h1 {
   text-align: center;
 }
-.home .bienvenue_presentation {
+.home .bienvenue__presentation {
   padding: 0.1px;
   z-index: 0;
   background-color: #e5e5e5;
@@ -137,11 +175,11 @@ footer .social-network a:not(:last-child) {
   margin: 40px auto 70px;
   line-height: 1.4;
 }
-.home .bienvenue_presentation h2 {
+.home .bienvenue__presentation h2 {
   text-align: center;
   margin-top: 20px;
 }
-.home .bienvenue_presentation_img {
+.home .bienvenue__presentation img {
   float: left;
   margin: 0 20px 20px 0;
   height: 250px;
@@ -149,10 +187,10 @@ footer .social-network a:not(:last-child) {
   border-radius: 50%;
   shape-outside: margin-box;
 }
-.home .bienvenue_presentation_text {
+.home .bienvenue__presentation__text {
   margin: 20px;
 }
-.home .bienvenue_presentation p:last-child {
+.home .bienvenue__presentation p:last-child {
   text-align: center;
   margin-bottom: 20px;
 }

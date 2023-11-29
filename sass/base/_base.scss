@@ -18,6 +18,9 @@ body {
   font-size: 20px;
   opacity: 0;
   animation: opening 1s ease forwards;
+  @include mobile-display {
+    font-size: 16px;
+  }
 }
 h1,
 h2 {
@@ -27,12 +30,21 @@ h2 {
 h1 {
   font-size: 60px;
   margin-bottom: 40px;
+  @include mobile-display {
+    font-size: 40px;
+  }
 }
 h2 {
   font-size: 40px;
+  @include mobile-display {
+    font-size: 30px;
+  }
 }
 h3 {
   font-size: 30px;
+  @include mobile-display {
+    font-size: 24px;
+  }
 }
 a {
   color: $link-color;
@@ -45,4 +57,8 @@ header,
 main > div:not(.presentation),
 footer {
   @extend %left-right-padding;
+  @include mobile-display {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }

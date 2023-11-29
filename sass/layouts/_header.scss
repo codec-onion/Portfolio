@@ -9,6 +9,10 @@ header {
   background-color: $quaternary-color;
   color: $tertiary-color;
   border-bottom: 2px solid $tertiary-color;
+  div:first-child {
+    display: flex;
+    align-items: center;
+  }
   img {
     height: 50px;
     width: 50px;
@@ -34,5 +38,10 @@ header {
   }
   @include mobile-display {
     flex-direction: column;
+    height: 117px;
+    padding: 15px;
+    div:first-child {
+      margin-bottom: 15px;
+    }
   }
 }

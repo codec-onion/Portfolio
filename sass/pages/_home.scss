@@ -4,7 +4,7 @@
     h1 {
       text-align: center;
     }
-    &_presentation {
+    &__presentation {
       padding: 0.1px;
       z-index: 0;
       background-color: $secondary-color;
@@ -15,7 +15,7 @@
         text-align: center;
         margin-top: 20px;
       }
-      &_img {
+      img {
         float: left;
         margin: 0 20px 20px 0;
         height: 250px;
@@ -23,15 +23,8 @@
         border-radius: 50%;
         shape-outside: margin-box;
       }
-      &_text {
+      &__text {
         margin: 20px;
-        // &_link {
-        //   color: $link-color;
-        //   text-decoration: none;
-        //   &:hover {
-        //     text-decoration: underline;
-        //   }
-        // }
       }
       p:last-child {
         text-align: center;
